@@ -44,6 +44,7 @@ nav {
   /* "rem" is a unit of measurement within frontend developement */
   gap: 2rem;
   list-style: none;
+  font-size: 1.5rem;
 }
 
 a {
@@ -417,4 +418,15 @@ article .icon {
 
 .email-icon {
   height: 2.5rem;
+}
+
+/* FOOTER SECTION */
+
+footer {
+  height: 26vh;
+  margin: 0 1rem;
+}
+
+footer p {
+  text-align: center;
 }
