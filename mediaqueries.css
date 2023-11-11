@@ -19,6 +19,10 @@
     display: none;
   }
 
+  .language-toggle {
+    display: block;
+  }
+
   #hamburger-nav {
     display: flex;
   }
