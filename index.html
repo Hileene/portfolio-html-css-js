@@ -10,19 +10,33 @@
   <body>
     <!-- Navigation principale -->
     <nav id="desktop-nav">
-      <div class="logo">Aline Behalal</div>
+      <div class="logo" data-i18n="name">Aline Behalal</div>
+      <!-- Language Toggle button -->
+      <div class="language-toggle">
+        <button class="toggle-button" id="switchLangEN">EN</button>
+        <button class="toggle-button" id="switchLangFR">FR</button>
+      </div>
       <div>
         <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about" data-i18n="about">About</a></li>
+          <li>
+            <a href="#experience" data-i18n="experience">Experience</a>
+          </li>
+          <li>
+            <a href="#projects" data-i18n="projects">Projects</a>
+          </li>
+          <li><a href="#contact" data-i18n="contact">Contact</a></li>
         </ul>
       </div>
     </nav>
     <!-- Navigation-hamburger -->
     <nav id="hamburger-nav">
-      <div class="logo">Aline Behalal</div>
+      <div class="logo" data-i18n="name">Aline Behalal</div>
+      <!-- Language Toggle button -->
+      <div class="language-toggle">
+        <button class="toggle-button" id="switchLangENHamburger">EN</button>
+        <button class="toggle-button" id="switchLangFRHamburger">FR</button>
+      </div>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
@@ -30,10 +44,24 @@
           <span></span>
         </div>
         <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          <li>
+            <a href="#about" onclick="toggleMenu()" data-i18n="about">About</a>
+          </li>
+          <li>
+            <a href="#experience" onclick="toggleMenu()" data-i18n="experience"
+              >Experience</a
+            >
+          </li>
+          <li>
+            <a href="#projects" onclick="toggleMenu()" data-i18n="projects"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a href="#contact" onclick="toggleMenu()" data-i18n="contact"
+              >Contact</a
+            >
+          </li>
         </div>
       </div>
     </nav>
@@ -41,20 +69,25 @@
     <!-- Profile -->
     <section id="profile">
       <div class="section__pic-container">
-        <img src="./assets/profile-pic.png" alt="John Doe picture" />
+        <img src="./assets/profile-pic-3.png" alt="John Doe picture" />
       </div>
       <div class="section__text">
-        <p class="section__text__p1">Hello I'm</p>
-        <h1 class="title">Aline Behalal</h1>
-        <p class="section__text__p2">Frontend Developer</p>
+        <p class="section__text__p1" data-i18n="hello">Hello I'm</p>
+        <h1 class="title" data-i18n="name">Aline Behalal</h1>
+        <p class="section__text__p2" data-i18n="job">Frontend Developer</p>
         <div class="btn-container">
           <button
             class="btn btn-color-2"
             onclick="window.open('./assets/resume-example.pdf')"
+            data-i18n="downloadcv"
           >
             Download CV
           </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          <button
+            class="btn btn-color-1"
+            onclick="location.href='./#contact'"
+            data-i18n="contactinfo"
+          >
             Contact Info
           </button>
         </div>
@@ -76,12 +109,12 @@
     </section>
     <!-- About -->
     <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
+      <p class="section__text__p1" data-i18n="knowmore">Get To Know More</p>
+      <h1 class="title" data-i18n="aboutme">About Me</h1>
       <div class="section-container">
         <div class="section__pic-container">
           <img
-            src="./assets/about-pic.png"
+            src="./assets/about-pic-1.png"
             alt="Profile picture"
             class="about-pic"
           />
@@ -94,8 +127,8 @@
                 alt="experience icon"
                 class="icon"
               />
-              <h3>Experience</h3>
-              <p>2+ years <br />Frontend Development</p>
+              <h3 data-i18n="experience">Experience</h3>
+              <p data-i18n="years">Fresh Graduate<br />Frontend Development</p>
             </div>
             <div class="details-container">
               <img
@@ -103,18 +136,18 @@
                 alt="education icon"
                 class="icon"
               />
-              <h3>Education</h3>
-              <p>B.Sc. Bachelors Degree <br />M.Sc. Masters Degree</p>
+              <h3 data-i18n="education">Education</h3>
+              <p data-i18n="educationdata">
+                A.S. Web Development <br />BA Communication
+              </p>
             </div>
           </div>
-          <div class="text-container">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde error
-            velit ullam doloremque enim laborum possimus commodi voluptatum, quo
-            eius veritatis. Autem animi dignissimos repellendus consequuntur nam
-            accusantium, fugit assumenda sed voluptatibus voluptas facere, qui,
-            reiciendis temporibus doloremque modi possimus aspernatur.
-            Exercitationem explicabo recusandae illum rem pariatur aperiam,
-            consequatur quo!
+          <div class="text-container" data-i18n="objective">
+            As a recent graduate with a passion for front-end development, I
+            bring a foundation in web content creation, SEO expertise, and a
+            knack for English to French translation. Eager to apply my skills, I
+            aim to contribute effectively to innovative projects while
+            continuously enhancing my coding abilities.
           </div>
         </div>
       </div>
@@ -127,12 +160,14 @@
     </section>
     <!-- Experience -->
     <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
+      <p class="section__text__p1" data-i18n="explore">Explore My</p>
+      <h1 class="title" data-i18n="skills">Experience</h1>
       <div class="experience-details-container">
         <div class="about-containers">
           <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
+            <h2 class="experience-sub-title" data-i18n="skillsfrontend">
+              Frontend Development
+            </h2>
             <div class="article-container">
               <article>
                 <img
@@ -142,7 +177,7 @@
                 />
                 <div>
                   <h3>HTML</h3>
-                  <p>Experienced</p>
+                  <p data-i18n="proficient">Proficient</p>
                 </div>
               </article>
               <article>
@@ -153,7 +188,7 @@
                 />
                 <div>
                   <h3>CSS</h3>
-                  <p>Experienced</p>
+                  <p data-i18n="proficient">Proficient</p>
                 </div>
               </article>
               <article>
@@ -164,7 +199,7 @@
                 />
                 <div>
                   <h3>SASS</h3>
-                  <p>Basic</p>
+                  <p data-i18n="beginner">Beginner</p>
                 </div>
               </article>
               <article>
@@ -175,7 +210,7 @@
                 />
                 <div>
                   <h3>JavaScript</h3>
-                  <p>Basic</p>
+                  <p data-i18n="intermediate">Intermediate</p>
                 </div>
               </article>
               <article>
@@ -186,7 +221,7 @@
                 />
                 <div>
                   <h3>REACT</h3>
-                  <p>Basic</p>
+                  <p data-i18n="beginner">Beginner</p>
                 </div>
               </article>
               <article>
@@ -197,13 +232,15 @@
                 />
                 <div>
                   <h3>Material UI</h3>
-                  <p>Basic</p>
+                  <p data-i18n="beginner">Beginner</p>
                 </div>
               </article>
             </div>
           </div>
           <div class="details-container">
-            <h2 class="experience-sub-title">Backend Development</h2>
+            <h2 class="experience-sub-title" data-i18n="skillsbackend">
+              Backend Development
+            </h2>
             <div class="article-container">
               <article>
                 <img
@@ -213,7 +250,7 @@
                 />
                 <div>
                   <h3>Node JS</h3>
-                  <p>Basic</p>
+                  <p data-i18n="beginner">Beginner</p>
                 </div>
               </article>
               <article>
@@ -224,7 +261,7 @@
                 />
                 <div>
                   <h3>Mongo DB</h3>
-                  <p>Basic</p>
+                  <p data-i18n="beginner">Beginner</p>
                 </div>
               </article>
               <article>
@@ -235,7 +272,7 @@
                 />
                 <div>
                   <h3>Git</h3>
-                  <p>Intermediate</p>
+                  <p data-i18n="intermediate">Intermediate</p>
                 </div>
               </article>
               <article>
@@ -246,7 +283,7 @@
                 />
                 <div>
                   <h3>API</h3>
-                  <p>Basic</p>
+                  <p data-i18n="beginner">Beginner</p>
                 </div>
               </article>
             </div>
@@ -261,20 +298,185 @@
       />
     </section>
     <!-- Projects -->
-    <section id="projects">
-      <p class="section__text__p1">Browse my recent</p>
-      <h1 class="title">Projects</h1>
+    <section class="container" id="projects">
+      <!-- <p class="section__text__p1" data-i18n="browse">Browse My Recent</p>
+      <h1 class="title" data-i18n="projects">Projects</h1> -->
+      <div class="slider-wrapper">
+        <div class="slider">
+          <img
+            src="https://images.unsplash.com/photo-1698778873705-1b01e3b3574b?q=80&w=1786&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Project 1"
+            id="slide-1"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1682687982468-4584ff11f88a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Project 2"
+            id="slide-2"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1698778574083-279be0ac6681?q=80&w=2033&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Project 3"
+            id="slide-3"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1682687982502-1529b3b33f85?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Project 4"
+            id="slide-4"
+          />
+        </div>
+
+        <div class="slider-nav">
+          <a href="#slide-1"></a>
+          <a href="#slide-2"></a>
+          <a href="#slide-3"></a>
+          <a href="#slide-4"></a>
+        </div>
+      </div>
+    </section>
+    <!-- <section id="projects">
+      <p class="section__text__p1" data-i18n="browse">Browse My Recent</p>
+      <h1 class="title" data-i18n="projects">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="slider-wrapper">
+              <div class="slider">
+                <div class="slide slide-1" id="slide-1">
+                  <div class="slide-data">
+                    <h2
+                      class="experience-sub-title project-title"
+                      data-i18n="project1"
+                    >
+                      Project One
+                    </h2>
+
+                    <div class="btn-container">
+                      <button
+                        class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com'"
+                      >
+                        Github
+                      </button>
+                      <button
+                        class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com'"
+                        data-i18n="livedemo"
+                      >
+                        Live Demo
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="slide slide-2" id="slide-2">
+                  <div class="slide-data">
+                    <h2
+                      class="experience-sub-title project-title"
+                      data-i18n="project2"
+                    >
+                      Project Two
+                    </h2>
+                    <div class="btn-container">
+                      <button
+                        class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com'"
+                      >
+                        Github
+                      </button>
+                      <button
+                        class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com'"
+                        data-i18n="livedemo"
+                      >
+                        Live Demo
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="slide slide-3" id="slide-3">
+                  <div class="slide-data">
+                    <h2
+                      class="experience-sub-title project-title"
+                      data-i18n="project3"
+                    >
+                      Project Three
+                    </h2>
+                    <div class="btn-container">
+                      <button
+                        class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com'"
+                      >
+                        Github
+                      </button>
+                      <button
+                        class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com'"
+                        data-i18n="livedemo"
+                      >
+                        Live Demo
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="slide slide-4" id="slide-4">
+                  <div class="slide-data">
+                    <h2
+                      class="experience-sub-title project-title"
+                      data-i18n="project4"
+                    >
+                      Project Four
+                    </h2>
+                    <div class="btn-container">
+                      <button
+                        class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com'"
+                      >
+                        Github
+                      </button>
+                      <button
+                        class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com'"
+                        data-i18n="livedemo"
+                      >
+                        Live Demo
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-nav">
+                <a href="#slide-1"></a>
+                <a href="#slide-2"></a>
+                <a href="#slide-3"></a>
+                <a href="#slide-4"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section> -->
+    <!--</section>
+     <section id="projects">
+      <p class="section__text__p1" data-i18n="browse">Browse My Recent</p>
+      <h1 class="title" data-i18n="projects">Projects</h1>
       <div class="experience-details-container">
         <div class="about-containers">
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/project-1.png"
+                src="./assets/project-4.png"
                 alt="Project 1"
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project One</h2>
+            <h2 class="experience-sub-title project-title" data-i18n="project1">
+              Project One
+            </h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
@@ -285,6 +487,7 @@
               <button
                 class="btn btn-color-2 project-btn"
                 onclick="location.href='https://github.com'"
+                data-i18n="livedemo"
               >
                 Live Demo
               </button>
@@ -293,12 +496,14 @@
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/project-2.png"
+                src="./assets/project-5.png"
                 alt="Project 2"
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <h2 class="experience-sub-title project-title" data-i18n="project2">
+              Project Two
+            </h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
@@ -309,6 +514,7 @@
               <button
                 class="btn btn-color-2 project-btn"
                 onclick="location.href='https://github.com'"
+                data-i18n="livedemo"
               >
                 Live Demo
               </button>
@@ -317,12 +523,14 @@
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/project-3.png"
+                src="./assets/project-6.png"
                 alt="Project 3"
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <h2 class="experience-sub-title project-title" data-i18n="project3">
+              Project Three
+            </h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
@@ -333,6 +541,34 @@
               <button
                 class="btn btn-color-2 project-btn"
                 onclick="location.href='https://github.com'"
+                data-i18n="livedemo"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-7.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title" data-i18n="project4">
+              Project Four
+            </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com'"
+                data-i18n="livedemo"
               >
                 Live Demo
               </button>
@@ -346,11 +582,11 @@
         class="icon arrow"
         onclick="location.href='./#contact'"
       />
-    </section>
+    </section> -->
     <!-- Contact -->
     <section id="contact">
-      <p class="section__text__p1">Get In Touch</p>
-      <h1 class="title">Contact</h1>
+      <p class="section__text__p1" data-i18n="getintouch">Get In Touch</p>
+      <h1 class="title" data-i18n="contact">Contact</h1>
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
           <img
@@ -358,7 +594,11 @@
             alt="Email icon"
             class="icon contact-icon email-icon"
           />
-          <p><a href="mailto:exampleemail@gmail.com">Example@gmail.com</a></p>
+          <p>
+            <a href="mailto:exampleemail@gmail.com" data-i18n="email"
+              >Example@gmail.com</a
+            >
+          </p>
         </div>
         <div class="contact-info-container">
           <img
@@ -366,7 +606,9 @@
             alt="Linkedin icon"
             class="icon contact-icon"
           />
-          <p><a href="https://www.linkedin.com">Linkedin</a></p>
+          <p>
+            <a href="https://www.linkedin.com" data-i18n="linkedin">Linkedin</a>
+          </p>
         </div>
       </div>
     </section>
@@ -375,16 +617,19 @@
       <nav>
         <div class="nav-links-container">
           <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about" data-i18n="about">About</a></li>
+            <li><a href="#experience" data-i18n="experience">Experience</a></li>
+            <li><a href="#projects" data-i18n="projects">Projects</a></li>
+            <li><a href="#contact" data-i18n="contact">Contact</a></li>
           </ul>
         </div>
       </nav>
-      <p>Copyright &#169; 2023 Aline Behalal All Rights Reserved</p>
+      <p data-i18n="copyright">
+        Copyright &#169; 2023 Aline Behalal All Rights Reserved
+      </p>
     </footer>
 
     <script src="script.js"></script>
+    <script src="changeLang.js"></script>
   </body>
 </html>
