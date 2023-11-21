@@ -9,7 +9,6 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  border: red 1px solid;
 }
 
 html {
@@ -172,7 +171,6 @@ section {
   justify-content: center;
   gap: 5rem;
   height: 80vh;
-  border: red 1px solid;
 }
 
 .section__pic-container {
@@ -267,7 +265,6 @@ section {
 
 #about {
   position: relative;
-  border: red 1px solid;
 }
 
 .about-containers {
@@ -321,7 +318,6 @@ section {
 
 #experience {
   position: relative;
-  border: red 1px solid;
 }
 
 .experience-sub-title {
@@ -359,149 +355,31 @@ article .icon {
 
 /* PROJECTS SECTION */
 
-/*SLIDER PROJECT PROTOTYPE*/
-.container {
-  padding: 2rem;
-  border: red 1px solid;
-}
-.slider-wrapper {
+#projects {
   position: relative;
-  max-width: 48rem;
-  margin: 0 auto;
-}
-.slider {
   display: flex;
-  aspect-ratio: 16 / 9;
-  overflow-x: hidden;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
-  border-radius: 0.5rem;
-}
-.slider img {
-  flex: 1 0 100%; /*By setting flex grow to 1 every image will set with an equal size inside the container.By setting flex shrink to 0 every image will retain the width it needs and not wrap its content. By setting flex base to 100% every image will have an initial size of 100% meaning it will take up the entire parent container.*/
-  scroll-snap-align: start;
-  object-fit: cover;
-}
-
-.slider-nav {
-  display: flex;
-  column-gap: 1rem;
-  position: absolute;
-  bottom: 1.25rem;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1;
-}
-
-.slider-nav a {
-  width: 0.5rem;
-  height: 0.5rem;
-  border-radius: 50%;
-  background-color: #fff;
-  opacity: 0.75;
-  transition: opacity ease 250ms;
-}
-.slider-nav a:hover {
-  opacity: 1;
-}
-
-/*Slider Project*/
-
-/*#projects {
-  position: relative;
-}
-
-.slider-wrapper {
-  position: relative;
-  max-width: 48rem;
-  margin: 0 auto;
-}
-
-.slider {
-  display: flex;
-  aspect-ratio: 16 / 9;
-  overflow-x: hidden;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
-  border-radius: 0.5rem;
-}
-
-.slide {
-  background-size: cover;
-  background-position: center;
-  min-width: 100%;
-  position: relative;
-}
-.slide::before {
-  content: '';
-  position: absolute;
-  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   height: 100%;
-  top: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.5);
 }
 
-.slide-data {
+#projects .experience-details-container {
   width: 100%;
-  position: absolute;
-  top: 50%;
-  color: #fff;
-  text-align: center;
-  transform: translateY(-50%);
-  padding: 0 20%;
-  right: -19%;
 }
 
-.project-title {
-  margin: 1rem;
-  color: white;
+#projects .about-containers {
+  flex-wrap: wrap;
+  width: 100%;
 }
 
-.project-btn {
-  color: black;
-  border: none;
-  background-color: #fff;
-}
-.slide-1 {
-  background-image: url('https://images.unsplash.com/photo-1698778873705-1b01e3b3574b?q=80&w=1786&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-}
-.slide-2 {
-  background-image: url('https://images.unsplash.com/photo-1682687982468-4584ff11f88a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-}
-.slide-3 {
-  background-image: url('https://images.unsplash.com/photo-1698778574083-279be0ac6681?q=80&w=2033&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-}
-.slide-4 {
-  background-image: url('https://images.unsplash.com/photo-1682687982502-1529b3b33f85?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+#projects .details-container {
+  padding-bottom: 10rem;
+  height: 274px;
 }
 
-.slider-nav {
-  display: flex;
-  column-gap: 1rem;
-  position: absolute;
-  bottom: 1.25rem;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1;
-}
-
-.slider-nav a {
-  width: 0.5rem;
-  height: 0.5rem;
-  border-radius: 50%;
-  background-color: #fff;
-  opacity: 0.75;
-  transition: opacity ease 250ms;
-}
-.slider-nav a:hover {
-  opacity: 1;
-}*/
-
-/*#projects {
-  position: relative;
+#projects .article-container {
+  height: 100%;
 }
 
 .color-container {
@@ -511,19 +389,20 @@ article .icon {
 
 .project-img {
   border-radius: 2rem;
-  width: 90%;
-  height: 90%;
+  width: 100%;
+  height: 100%;
 }
 
 .project-title {
-  margin: 1rem;
+  margin: 0.5rem 1rem 0.5rem 1rem;
   color: black;
+  font-size: 1.5rem;
 }
 
 .project-btn {
   color: black;
   border-color: rgb(163, 163, 163);
-}*/
+}
 
 /* CONTACT SECTION */
 
@@ -532,7 +411,6 @@ article .icon {
   justify-content: center;
   flex-direction: column;
   height: 70vh;
-  border: red 1px solid;
 }
 
 .contact-info-upper-container {
@@ -571,7 +449,6 @@ article .icon {
 footer {
   height: 26vh;
   margin: 0 1rem;
-  border: red 1px solid;
 }
 
 footer p {
