@@ -33,6 +33,8 @@ const en = {
   project2: 'Project Two',
   project3: 'Project Three',
   project4: 'Project Four',
+  project5: 'Project Five',
+  project6: 'Project Six',
   livedemo: 'Live Demo',
   getintouch: 'Get In Touch',
   email: 'Example@gmail.com',
@@ -66,12 +68,14 @@ const fr = {
   skillsbackend: 'Développement Backend',
   proficient: 'Compétent',
   beginner: 'Débutant',
-  intermediate: 'Intermediaire',
+  intermediate: 'Intermédiaire',
   browse: 'Parcourez Mes Derniers',
   project1: 'Projet Un',
   project2: 'Projet Deux',
   project3: 'Projet Trois',
   project4: 'Projet Quatre',
+  project5: 'Projet Cinq',
+  project6: 'Projet Six',
   livedemo: 'Demo',
   getintouch: 'Entrez En ',
   email: 'Example@gmail.com',
@@ -87,10 +91,29 @@ function replaceText(el) {
   const key = el.dataset.i18n
   el.innerHTML = i18n[key] || key
 }
-
+// Fonction pour modifier la langue
 function changeLang(lang) {
   i18n = eval(lang)
   elements.forEach((el) => replaceText(el))
+}
+
+var buttons = document.querySelectorAll('.toggle-button')
+var activeClassName = 'active'
+
+//Fonction qui permet de mettre le bouton sélectionné actif
+function activeState(items, activeName) {
+  for (var i = 0; i < items.length; i++) {
+    if (items[i].classList.contains(activeName)) {
+      items[i].classList.remove(activeName)
+    }
+  }
+}
+
+for (var i = 0; i < buttons.length; i++) {
+  buttons[i].addEventListener('click', function (e) {
+    activeState(buttons, activeClassName)
+    e.target.classList.add(activeClassName)
+  })
 }
 
 document
