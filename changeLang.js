@@ -87,6 +87,8 @@ const fr = {
 
 const elements = document.querySelectorAll('[data-i18n]')
 
+let currentLanguage = 'en' // Set the initial language
+
 let i18n = []
 
 function replaceText(el) {
@@ -136,3 +138,13 @@ document
 
 // Mise à jour de l'email via l'objet "config"
 document.querySelector('#email-info').innerHTML = config.email
+
+// Function to download the appropriate resume PDF based on language
+function downloadResumePdf() {
+  const lang = currentLanguage
+  const pdfUrl =
+    lang === 'en' ? './assets/myResumeEN.pdf' : './assets/myResumeFR.pdf'
+
+  // Open the PDF in a new window
+  window.open(pdfUrl)
+}
