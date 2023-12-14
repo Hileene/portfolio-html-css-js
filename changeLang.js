@@ -1,3 +1,5 @@
+// Donnée du portfolio dans les deux langues
+
 'use strict'
 
 const en = {
@@ -49,7 +51,7 @@ const fr = {
   projects: 'Projets',
   contact: 'Contact',
   hello: 'Bonjour, Je Suis',
-  job: 'Développeur Frontend Junior',
+  job: 'Développeuse Frontend Junior',
   downloadcv: 'CV',
   contactinfo: 'Contact',
   knowmore: 'Découvrez-En Plus',
@@ -116,6 +118,8 @@ for (var i = 0; i < buttons.length; i++) {
   })
 }
 
+// /Écouteurs d'évènement des boutons d'option langue
+
 document
   .getElementById('switchLangEN')
   .addEventListener('click', () => changeLang('en'))
@@ -129,3 +133,6 @@ document
 document
   .getElementById('switchLangFRHamburger')
   .addEventListener('click', () => changeLang('fr'))
+
+// Mise à jour de l'email via l'objet "config"
+document.querySelector('#email-info').innerHTML = config.email
