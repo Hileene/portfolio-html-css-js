@@ -87,18 +87,62 @@ const fr = {
 
 const elements = document.querySelectorAll('[data-i18n]')
 
-let currentLanguage = 'en' // Set the initial language
+let currentLanguage = 'en' // Langue initial
+let isFrench = false
 
 let i18n = []
+
+//Fonction pour créer un bouton de téléchargement de Pdf en fonction de la langue du site
+function buttonPdf(isFrench) {
+  const resumeBtnContainer = document.querySelector('.btn-container')
+  const existingResumeBtn = document.querySelector('.download-btn')
+
+  if (existingResumeBtn) {
+    // Si le bouton existe déjà, mettre à jour ses propriétés en fonction de la langue actuelle
+    existingResumeBtn.download = isFrench ? 'myResumeFR.pdf' : 'myResumeEN.pdf'
+    existingResumeBtn.href = isFrench
+      ? './assets/myResumeFR.pdf'
+      : './assets/myResumeEN.pdf'
+    existingResumeBtn.textContent = isFrench ? 'CV' : 'Download CV'
+  } else {
+    // Si le bouton n'existe pas, création d'un nouveau.
+    const newResumeBtn = document.createElement('a')
+    newResumeBtn.classList.add('btn', 'btn-color-2', 'download-btn')
+    newResumeBtn.setAttribute(
+      'download',
+      isFrench ? 'myResumeFR.pdf' : 'myResumeEN.pdf'
+    )
+    newResumeBtn.href = isFrench
+      ? './assets/myResumeFR.pdf'
+      : './assets/myResumeEN.pdf'
+    newResumeBtn.textContent = isFrench ? 'CV' : 'Download CV'
+
+    // Ajout du nouveau bouton.
+    resumeBtnContainer.appendChild(newResumeBtn)
+  }
+}
 
 function replaceText(el) {
   const key = el.dataset.i18n
   el.innerHTML = i18n[key] || key
 }
-// Fonction pour modifier la langue
-function changeLang(lang) {
-  i18n = eval(lang)
+
+// Fonction pour changer la langue en anglais
+function changeToEnglish() {
+  currentLanguage = 'en'
+  isFrench = false
+  i18n = eval('en')
   elements.forEach((el) => replaceText(el))
+  buttonPdf(isFrench)
+}
+
+// Fonction pour changer la langue en français
+function changeToFrench() {
+  currentLanguage = 'fr'
+  isFrench = true
+  i18n = eval('fr')
+  elements.forEach((el) => replaceText(el))
+  buttonPdf(isFrench)
 }
 
 var buttons = document.querySelectorAll('.toggle-button')
@@ -120,31 +164,19 @@ for (var i = 0; i < buttons.length; i++) {
   })
 }
 
-// /Écouteurs d'évènement des boutons d'option langue
-
+// Écouteurs d'évènement des boutons d'option langue
 document
   .getElementById('switchLangEN')
-  .addEventListener('click', () => changeLang('en'))
+  .addEventListener('click', changeToEnglish)
 document
   .getElementById('switchLangFR')
-  .addEventListener('click', () => changeLang('fr'))
-
+  .addEventListener('click', changeToFrench)
 document
   .getElementById('switchLangENHamburger')
-  .addEventListener('click', () => changeLang('en'))
+  .addEventListener('click', changeToEnglish)
 document
   .getElementById('switchLangFRHamburger')
-  .addEventListener('click', () => changeLang('fr'))
+  .addEventListener('click', changeToFrench)
 
 // Mise à jour de l'email via l'objet "config"
 document.querySelector('#email-info').innerHTML = config.email
-
-// Function to download the appropriate resume PDF based on language
-function downloadResumePdf() {
-  const lang = currentLanguage
-  const pdfUrl =
-    lang === 'en' ? './assets/myResumeEN.pdf' : './assets/myResumeFR.pdf'
-
-  // Open the PDF in a new window
-  window.open(pdfUrl)
-}
