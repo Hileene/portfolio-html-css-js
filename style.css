@@ -281,6 +281,13 @@ section {
   border: rgb(255, 255, 255) 0.1rem solid;
 }
 
+.download-btn {
+  text-decoration: none !important;
+  width: 6rem;
+  font-family: 'Arial';
+  font-size: 0.85rem;
+}
+
 /* ABOUT SECTION */
 
 #about {
