@@ -39,7 +39,6 @@ const en = {
   project6: 'Project Six',
   livedemo: 'Live Demo',
   getintouch: 'Get In Touch',
-  email: 'Example@gmail.com',
   linkedin: 'Linkedin',
   copyright: 'Copyright &#169; 2023 Aline Behalal All Rights Reserved',
 }
@@ -177,7 +176,3 @@ document
 document
   .getElementById('switchLangFRHamburger')
   .addEventListener('click', changeToFrench)
-
-// Mise à jour de l'email via l'objet "config""
-
-document.querySelector('#email-info').innerHTML = config.email
