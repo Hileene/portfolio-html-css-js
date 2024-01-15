@@ -2,7 +2,7 @@
 
 Welcome to my personal portfolio! This portfolio showcases my skills, projects, and experiences as a frontend developer.
 
-[![forthebadge](https://forthebadge.com/images/badges/uses-html.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/uses-css.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/uses-js.svg)](https://forthebadge.com) <img src="/assets/powered-by-candy.svg" alt="Candy badge>
+[![forthebadge](https://forthebadge.com/images/badges/uses-html.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/uses-css.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/uses-js.svg)](https://forthebadge.com) <img src="/assets/powered-by-candy.svg" alt="Candy badge">
 
 ## Table of Contents
 
