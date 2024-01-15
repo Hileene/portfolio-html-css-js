@@ -178,7 +178,6 @@ document
   .getElementById('switchLangFRHamburger')
   .addEventListener('click', changeToFrench)
 
-// Mise à jour de l'email via Netlify environment variables"
+// Mise à jour de l'email via l'objet "config""
 
-document.querySelector('#email-info').innerHTML =
-  window.netlifyEnv.EMAIL || 'fallback@example.com'
+document.querySelector('#email-info').innerHTML = config.email
