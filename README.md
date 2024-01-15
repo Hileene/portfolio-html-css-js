@@ -50,7 +50,7 @@ This portfolio was created based on the tutorial from the YouTube channel "How t
 
 - **Channel:** [How to Become a Developer](https://www.youtube.com/@howtobecomeadeveloper)
 - **Tutorial Video Title:** [Responsive Portfolio Website From Scratch](https://www.youtube.com/watch?v=ldwlOzRvYOU&list=PLgaK-fqraGPILHrmLF1LE3WlBAd-qnfVr&index=40)
-- **GitHub Repo with Assets:** [GitHub Repo](https://github.com/Ade-mir/html-css-j...)
+- **GitHub Repo with Assets:** [GitHub Repo](https://github.com/Ade-mir/html-css-js-portfolio-tutorial-2)
 
 ---
 
