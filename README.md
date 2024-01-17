@@ -34,7 +34,7 @@ Get in touch with me connect on LinkedIn.
 
 To run this project locally, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/Hileene/Your-Repository.git`
+1. Clone the repository: `git clone https://github.com/Hileene/portfolio-html-css-js
 2. Open the project folder in your code editor.
 3. Open `index.html` in your browser.
 
