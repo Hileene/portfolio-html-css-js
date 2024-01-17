@@ -38,8 +38,6 @@ To run this project locally, follow these steps:
 2. Open the project folder in your code editor.
 3. Open `index.html` in your browser.
 
-Feel free to explore the code and customize it to fit your needs.
-
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
