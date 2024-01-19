@@ -31,16 +31,11 @@ const en = {
   beginner: 'Beginner',
   intermediate: 'Intermediate',
   browse: 'Browse My Recent',
-  project1: 'Project One',
-  project2: 'Project Two',
-  project3: 'Project Three',
-  project4: 'Project Four',
-  project5: 'Project Five',
-  project6: 'Project Six',
   livedemo: 'Live Demo',
   getintouch: 'Get In Touch',
   linkedin: 'Linkedin',
   copyright: 'Copyright &#169; 2023 Aline Behalal All Rights Reserved',
+  ongoingproject: 'Ongoing Project',
 }
 
 const fr = {
@@ -71,17 +66,12 @@ const fr = {
   beginner: 'Débutant',
   intermediate: 'Intermédiaire',
   browse: 'Parcourez Mes Derniers',
-  project1: 'Projet Un',
-  project2: 'Projet Deux',
-  project3: 'Projet Trois',
-  project4: 'Projet Quatre',
-  project5: 'Projet Cinq',
-  project6: 'Projet Six',
   livedemo: 'Demo',
   getintouch: 'Entrez En ',
   email: 'Example@gmail.com',
   linkedin: 'Linkedin',
   copyright: 'Copyrights © 2023 Aline Behalal Tous droits réservés',
+  ongoingproject: 'Projet en cours',
 }
 
 const elements = document.querySelectorAll('[data-i18n]')
