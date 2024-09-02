@@ -18,11 +18,11 @@ const en = {
   education: 'Education',
   educationdata: 'A.S. Web Development<br>BA Communication',
   objective:
-    'As a recent graduate with a passion for front-end development, I \
-  bring a foundation in web content creation, SEO expertise, and a \
-  knack for English to French translation. Eager to apply my skills, I \
-  aim to contribute effectively to innovative projects while \
-  continuously enhancing my coding abilities.',
+    'Leveraging my career transition into frontend development, \
+    I bring creative problem-solving skills and a user-centered approach to web projects.\
+    I’m expanding my expertise and learning TypeScript to enhance my capabilities.\
+    My diverse background, coupled with bilingual communication (French/English),\
+    equips me to deliver innovative solutions aligned with business goals.',
   explore: 'Explore My',
   skills: 'Experience',
   skillsfrontend: 'Frontend  Development',
@@ -54,10 +54,10 @@ const fr = {
   education: 'Éducation',
   educationdata: 'Titre RNCP niveau V<br>Licence en Communication',
   objective:
-    'Récemment diplômée et passionnée par le développement frontend, je ' +
-    'possède une base solide en création de contenu web, en référencement (SEO) ' +
-    "et en traduction de l'anglais vers le français.  J'ai hâte de mettre en oeuvre " +
-    'mes compétences et de contribuer efficacement à des projets innovants tout en améliorant continuellement mes compétences en programmation.',
+    'Suite à ma reconversion en développement frontend, je ' +
+    'combine créativité et souci du détail pour développer des projets web orientés utilisateur. ' +
+    'Actuellement, je perfectionne mes connaissances et me forme en autodidacte au TypeScript. ' +
+    'Mon parcours diversifié et mes compétences bilingues (français/anglais) me permettent de contribuer de manière innovante aux projets.',
   explore: 'Explorez Mes',
   skills: 'Compétences',
   skillsfrontend: 'Développement Frontend',
